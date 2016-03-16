@@ -449,8 +449,8 @@ h1.site-title,
 h1.site-title a {
 	width: 100%;
 	margin: auto;
-	font-size: 1.4em;
-	line-height: 1em;
+	font-size: 3em;
+	line-height: 2em;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -966,6 +966,7 @@ a:active {
 .entry-header {
 	width: 90%;
 	min-height: 30px;
+	padding: 10px;
 	background: #c0c0c0;
 	margin: auto;
 }
