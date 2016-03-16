@@ -975,10 +975,16 @@ a:active {
 }
 
 #secondary {
-	float: left;
 	margin: auto;
 	padding: 85px 0;
-	width: 25%;
+	width: 100%;
+}
+
+#secondary section{
+	float:none;
+	vertical-align: top;
+	display: inline-block;
+	
 }
 
 .page-entry {
