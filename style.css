@@ -464,7 +464,7 @@ h1.site-title a {
 	-o-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 50% 50%;
 	min-width: 100%;
 	min-height: 100%;
 	margin: 0;
