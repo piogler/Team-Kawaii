@@ -17,7 +17,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		
-		<?php get_template_part( 'template-parts/front-page/about', 'none' ); /* Adding the About Template */ ?> 
+		<?php get_template_part( 'template-parts/front-page/about', 'none' ); /* Adding the About Template */ ?>
+		<?php get_template_part( 'template-parts/front-page/whatsection', 'none' ); /* Adding the What We Do Template */ ?>
 
 		<?php
 		if ( have_posts() ) :
