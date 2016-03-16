@@ -28,3 +28,10 @@ $wp_customize->add_section( $prefix . '_front_general', array(
 	)
 );
 
+// Custom Background Image
+$wp_customize->add_setting( $prefix . '_front_general_image', array(
+		'sanitize_callback'	=> 'esc_url_raw',
+		'default'			=> '',
+		'transport'			=> 'postMessage'
+	)
+);
