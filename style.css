@@ -482,6 +482,14 @@ h1.site-title a {
 }
 
 
+p.front {
+	text-align: center;
+}
+
+p.front-sec {
+	text-align: center;
+	color: #fff;
+}
 
 
 
