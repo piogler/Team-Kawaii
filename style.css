@@ -455,6 +455,37 @@ h1.site-title a {
 	line-height: 0.8em;
 }
 /*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+#the-head {
+	color: #fff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 100%;
+	min-height: 100%;
+	margin: 0;
+}
+
+
+.front-page-head {
+	width: 100%;
+
+#about.front-section,
+#what.front-section {
+	width: 90%;
+	margin: auto;
+	padding: 10px 4px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
 button,
