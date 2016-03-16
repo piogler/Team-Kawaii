@@ -31,7 +31,47 @@ $wp_customize->add_section( $prefix . '_front_general', array(
 // Custom Background Image
 $wp_customize->add_setting( $prefix . '_front_general_image', array(
 		'sanitize_callback'	=> 'esc_url_raw',
-		'default'			=> '',
+		'default'			=> esc_url( get_template_directory_uri() . '/images/nightshot2.jpg' ),
 		'transport'			=> 'postMessage'
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Image_Control(
+		$wp_customize, $prefix . '_front_general_image', array(
+			'label'		=> esc_html__( 'Image', 'teamkawaii' ),
+			'section'	=> $prefix . '_front_general',
+			'settings'	=> $prefix . '_front_general_image',
+			'priority'	=> 1
+		)
+	)
+);
+
+// Your Title
+$wp_customize->add_setting( $prefix . '_front_general_title', array(
+		'sanitize_callback'	=> 'sanitize_text_field',
+		'default'			=> esc_html__( 'Drone Photo Focus', 'teamkawaii' ),
+		'transport'			=> 'postMessage'
+	)
+);
+$wp_customize->add_control( $prefix . '_front_general_title', array(
+	'label'			=> esc_html__( 'Title', 'teamkawaii' ),
+	'description'	=> esc_html__( 'Insert your title here', 'teamkawaii' ),
+	'section'		=> $prefix . '_front_general',
+	'priority'		=> 2
+	)
+);
+
+// Entry Field
+$wp_customize->add_setting( $prefix . '_front_general_entry', array(
+		'sanitize_callback'	=> 'sanitize_text_field',
+		'default'			=> esc_html__( 'Capturing from the Clouds', 'teamkawaii' ),
+		'transport'			=> 'postMessage'
+	)
+);
+$wp_customize->add_control( $prefix . '_front_general_title', array(
+	'label'			=> esc_html__( 'Entry', 'teamkawaii' ),
+	'description'	=> esc_html__( 'The content added to this field will show below the title', 'teamkawaii' ),
+	'section'		=> $prefix . '_front_general',
+	'priority'		=> 2
 	)
 );
