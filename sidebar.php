@@ -18,3 +18,6 @@ if ( is_home () || is_page() || is_single() || is_archive ){ ?>
 	
 ?>
 	
+ -<aside id="secondary" class="widget-area" role="complementary">
+ -	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+ -</aside><!-- #secondary -->
