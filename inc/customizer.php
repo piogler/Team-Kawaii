@@ -21,6 +21,9 @@ function team_kawaii_customize_register( $wp_customize ) {
 	/* About Section - calls for the about section on the options panel */
 	require_once get_template_directory() . 'inc/front-page/about.php';
 	
+	/* What We Do Section - calls for the about section on the options panel */
+	require_once get_template_directory() . 'inc/front-page/what-we-do.php';
+	
 }
 add_action( 'customize_register', 'team_kawaii_customize_register' );
 
