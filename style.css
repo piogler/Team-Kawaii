@@ -473,6 +473,7 @@ h1.site-title a {
 
 .front-page-head {
 	width: 100%;
+}
 
 #about.front-section,
 #what.front-section {
@@ -632,6 +633,10 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
+}
+
+.skip-link {
+	display: none;
 }
 
 /*--------------------------------------------------------------

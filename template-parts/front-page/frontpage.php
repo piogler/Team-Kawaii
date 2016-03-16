@@ -3,7 +3,7 @@
  * This template is used for the front page.
  * It is used to display the Front Page Image section on the front page.
  *
- * @package Team-Kawaii
+ * @package Team_Kawaii
  */
 ?>
 <?php

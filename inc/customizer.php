@@ -16,7 +16,7 @@ function team_kawaii_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 	
 	/* Front Page Image - Calls for the Image that goes on the Front Page in the Customize Panel */
-	require_once get_template_directory() . '/inc/customizer/front-page-image.php';
+	require_once get_template_directory() . '/inc/front-page/front-page-image.php';
 	
 }
 add_action( 'customize_register', 'team_kawaii_customize_register' );
