@@ -75,3 +75,67 @@ $wp_customize->add_control( $prefix . '_front_general_title', array(
 	'priority'		=> 2
 	)
 );
+
+// First button text
+$wp_customize->add_setting( $prefix .'_gigantor_general_first_button_title', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => esc_html__( 'Portfolio', 'teamkawaii' ),
+        'transport'         => 'postMessage'
+    )
+);
+$wp_customize->add_control(
+    $prefix .'_gigantor_general_first_button_title', array(
+        'label'         => esc_html__( 'First button title', 'teamkawaii' ),
+        'description'   => esc_html__( 'Add the text for first button.', 'teamkawaii'),
+        'section'       => $prefix . '_gigantor_general',
+        'priority'      => 6
+    )
+);
+
+// First button URL
+$wp_customize->add_setting( 'teamkawaii_gigantor_general_first_button_url', array(
+        'sanitize_callback'  => 'esc_url_raw',
+        'default'            => esc_url( '#' ),
+        'transport'          => 'postMessage'
+    )
+);
+$wp_customize->add_control( 'teamkawaii_gigantor_general_first_button_url', array(
+        'label'          => esc_html__( 'First button URL', 'teamkawaii' ),
+        'description'    => esc_html__( 'Add the URL for first button.', 'teamkawaii' ),
+        'section'        => $prefix . '_gigantor_general',
+        'settings'       => 'teamkawaii_gigantor_general_first_button_url',
+        'priority'       => 7
+    )
+);
+
+// Second button text
+$wp_customize->add_setting( $prefix .'_gigantor_general_second_button_title', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => esc_html__( 'Read More', 'teamkawaii' ),
+        'transport'         => 'postMessage'
+    )
+);
+$wp_customize->add_control(
+    $prefix .'_gigantor_general_second_button_title', array(
+        'label'         => esc_html__( 'Second button title', 'teamkawaii' ),
+        'description'   => esc_html__( 'Add the text for second button.', 'teamkawaii'),
+        'section'       => $prefix . '_gigantor_general',
+        'priority'      => 8
+    )
+);
+
+// Second button URL
+$wp_customize->add_setting( 'teamkawaii_gigantor_general_second_button_url', array(
+        'sanitize_callback'  => 'esc_url_raw',
+        'default'            => esc_url( '#' ),
+        'transport'          => 'postMessage'
+    )
+);
+$wp_customize->add_control( 'teamkawaii_gigantor_general_second_button_url', array(
+        'label'          => esc_html__( 'Second button URL', 'teamkawaii' ),
+        'description'    => esc_html__( 'Add the URL for second button.', 'teamkawaii' ),
+        'section'        => $prefix . '_gigantor_general',
+        'settings'       => 'teamkawaii_gigantor_general_second_button_url',
+        'priority'       => 9
+    )
+);
