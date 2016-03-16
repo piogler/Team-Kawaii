@@ -51,7 +51,7 @@ $front_general_image = get_theme_mod( 'teamkawaii_front_general_image', esc_url(
 	</header><!-- #masthead -->
 	<?php if( is_front_page() && is_home() ) : ?>
 		
-		<div id="the-head" class="front-page-head" style="background: url('<?php if( is_front_page() && is_home() ): echo ( ( $front_general_image ) ? esc_url( $front_general_image ) : '' ); endif; ?>');">
+		<div id="the-head" class="front-page-head" style="background-image: url('<?php if( is_front_page() && is_home() ): echo ( ( $front_general_image ) ? esc_url( $front_general_image ) : '' ); endif; ?>');">
 			<?php
 				get_template_part( 'template-parts/front-page/frontpage', 'frongpage' );
 			?>
