@@ -45,5 +45,5 @@ $front_image = get_theme_mod('teamkawaii_front_general_image', esc_url(get_templ
 	</header><!-- #masthead -->
 	<?php if( is_front_page() && is_home() ) : ?>
 		<div id="the-head" class="front-page-head" style="background: url('<?php if(is_front_page() && is_home()): echo ( ($front_image) ? esc_url($front_image) : '' ); endif; ?>');">
-			<?php get_template_part('template-parts/front-page/front-page-image', 'front-page'); ?>
+			<?php get_template_part('template-parts/front-page/frontpage', 'frontpage'); ?>
 	<div id="content" class="site-content">
