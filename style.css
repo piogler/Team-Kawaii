@@ -292,6 +292,11 @@ h6 {
 	clear: both;
 }
 
+h1.entry-title {
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -959,9 +964,15 @@ a:active {
 }
 
 .entry-header {
-	width: 100%;
+	width: 90%;
 	min-height: 30px;
 	background: #c0c0c0;
+}
+
+.entry-meta {
+	text-transform: uppercase;
+	line-height: 0.9em;
+	font-size: 0.9em;
 }
 
 .byline,
