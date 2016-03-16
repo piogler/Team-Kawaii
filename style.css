@@ -519,6 +519,26 @@ p.front-entry {
 	margin: 0;
 }
 
+a.button-one,
+a.button-two {
+	color: #fff;
+	width: auto;
+	height: 55px;
+	margin: 15px;
+	padding: 10px 30px;
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px #fff solid;
+}
+
+a.button-one:hover,
+a.button-two:hover {
+	background: #fff;
+	color: #000;
+}
 
 
 
