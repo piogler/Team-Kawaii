@@ -976,14 +976,15 @@ a:active {
 
 #secondary {
 	margin: auto;
-	padding: 85px 0;
+	padding: 85px 0 35px 0;
+	text-align: center;
 	width: 100%;
 	background-color: #c0c0c0;
 }
 
 #secondary section{
 	float:none;
-	vertical-align: top;
+	vertical-align: middle;
 	display: inline-block;
 	
 }
