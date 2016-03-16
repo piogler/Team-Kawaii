@@ -14,7 +14,7 @@
  ?>
 <div id="parallax" style="<?php echo $what_style; ?>">
 	<div id="what" class="what front-section">
-		<h2 class="what">What We Do</h2>
+		<a name="what-we-do"></a><h2 class="what">What We Do</h2>
 		<p class="front-sec">Lorem Ipsum here I suppose</p>
 	</div>
 </div>
