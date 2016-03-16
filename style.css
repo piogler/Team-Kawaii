@@ -713,17 +713,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #B8860B;
 }
 
 a:visited {
-	color: purple;
+	color: #B8860B;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #D2691E;
 }
 
 a:focus {
@@ -1168,4 +1168,13 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+footer{
+	text-align:center;
+	font-style:italic;
 }
