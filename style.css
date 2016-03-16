@@ -429,6 +429,23 @@ table {
 	border-bottom: 1px #c0c0c0 solid;
 }
 
+.site-branding {
+	width: 30%;
+	float: left;
+	margin: auto;
+	padding: 10px 30px;
+}
+
+h1.site-title,
+h1.site-title a {
+	width: 100%;
+	margin: auto;
+	font-size: 1.4em;
+	line-height: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
