@@ -295,6 +295,8 @@ h6 {
 h1.entry-title {
 	font-size: 3em;
 	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
 }
 
 p {
@@ -966,9 +968,10 @@ a:active {
 .entry-header {
 	width: 90%;
 	min-height: 30px;
-	padding: 10px;
+	padding: 5px 10px;
 	background: #c0c0c0;
 	margin: auto;
+	margin: 5px 0;
 }
 
 .entry-meta {
