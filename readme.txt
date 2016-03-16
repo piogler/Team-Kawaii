@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called Team Kawaii, or underscores.
+A starter theme called Team Kawaii made from underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called Team Kawaii, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hello! I am a starter theme called Team Kawaii made from underscores, which is alternative name for this theme. I am a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 == Installation ==
 	
