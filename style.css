@@ -540,6 +540,21 @@ a.button-two:hover {
 	color: #000;
 }
 
+/*--------------------------------------------------------------
+## About Section
+--------------------------------------------------------------*/
+#about {
+	background: #fff;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h2.about {
+	font-size: 3.5em;
+	text-transform: uppercase;
+	margin: 2px 0;
+	text-align: center;
+}
 
 
 /*--------------------------------------------------------------
