@@ -965,6 +965,12 @@ a:active {
 #primary {
 	margin: auto;
 	width: 100%;
+	height: auto;
+}
+.content-area{
+	margin: auto;
+	height: 600px!important;
+	width: 100%!important;
 }
 
 #main {
@@ -975,11 +981,17 @@ a:active {
 }
 
 #secondary {
+	clear: both;
 	margin: auto;
+	margin-top: 10em;
 	padding: 85px 0 35px 0;
 	text-align: center;
-	width: 100%;
+	max-width: 100%;
 	background-color: #c0c0c0;
+}
+
+.blog-posts{
+	margin-bottom: 4em;
 }
 
 #secondary section{
@@ -1021,7 +1033,6 @@ a:active {
 	margin: 0 auto;
 	min-height: 30px;
 	padding: 5px 10px;
-	background: #c0c0c0;
 }
 
 .entry-meta {
