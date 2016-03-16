@@ -577,7 +577,7 @@ h2.about {
 	background-size: cover;
 	background-position: 50% 50%;
 	width: 100%;
-	margin: 10px;
+	margin: 10px 0;
 }
 
 h2.what {
@@ -966,12 +966,16 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-.entry-header {
+.blog-posts {
 	width: 90%;
+	margin: auto;
+}
+
+.entry-header {
 	min-height: 30px;
 	padding: 5px 10px;
 	background: #c0c0c0;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .entry-meta {
@@ -979,6 +983,11 @@ a:active {
 	line-height: 0.9em;
 	font-size: 0.9em;
 	text-align: center;
+}
+
+.entry-content {
+	padding: 0 5px;
+	margin: auto;
 }
 
 .byline,

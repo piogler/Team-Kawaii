@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="blog-posts">
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
@@ -44,4 +45,5 @@
 	<footer class="entry-footer">
 		<?php team_kawaii_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+</div><!-- .blog-posts -->
 </article><!-- #post-## -->
