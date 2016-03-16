@@ -577,6 +577,7 @@ h2.about {
 	background-size: cover;
 	background-position: 50% 50%;
 	width: 100%;
+	margin: 10px;
 }
 
 h2.what {
@@ -971,13 +972,13 @@ a:active {
 	padding: 5px 10px;
 	background: #c0c0c0;
 	margin: auto;
-	margin: 5px 0;
 }
 
 .entry-meta {
 	text-transform: uppercase;
 	line-height: 0.9em;
 	font-size: 0.9em;
+	text-align: center;
 }
 
 .byline,
