@@ -493,6 +493,34 @@ p.front-sec {
 }
 
 
+/*--------------------------------------------------------------
+## Front Page Image
+--------------------------------------------------------------*/
+.header-front {
+	width: 100%;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	text-align: center;
+}
+
+h1.front-title {
+	color: #fff;
+	font-size: 5em;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+p.front-entry {
+	color: #fff;
+	font-size: 2em;
+	line-height: 0.7em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Forms
