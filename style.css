@@ -983,10 +983,18 @@ a:active {
 }
 
 #secondary section{
+	margin: 1em;
 	float:none;
 	vertical-align: middle;
 	display: inline-block;
 	
+}
+
+#secondary section ul
+{
+	margin: 0;
+	padding: 0;
+    list-style-type: none;
 }
 
 .page-entry {
