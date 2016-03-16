@@ -26,6 +26,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 # Typography
 # Elements
+# Header
 # Forms
 # Navigation
 	## Links
@@ -414,6 +415,18 @@ img {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#masthead {
+	width: 100%;
+	min-height: 80px;
+	margin: auto;
+	padding: 10px 0;
+	background: rgba( 255, 255, 255, 0.7 );
+	position: fixed;
+	border-bottom: 1px #c0c0c0 solid;
 }
 
 /*--------------------------------------------------------------
