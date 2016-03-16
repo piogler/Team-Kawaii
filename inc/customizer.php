@@ -18,6 +18,9 @@ function team_kawaii_customize_register( $wp_customize ) {
 	/* Front Page Image - Calls for the Image that goes on the Front Page in the Customize Panel */
 	require_once get_template_directory() . '/inc/front-page/front-page-image.php';
 	
+	/* About Section - calls for the about section on the options panel */
+	require_once get_template_directory() . 'inc/front-page/about.php';
+	
 }
 add_action( 'customize_register', 'team_kawaii_customize_register' );
 
