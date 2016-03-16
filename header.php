@@ -9,6 +9,8 @@
  * @package Team_Kawaii
  */
 
+$front_image = get_theme_mod('teamkawaii_front_general_image', esc_url(get_template_directory_uri() . '/images/nightshot2.jpg') );
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -41,5 +43,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</div><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+	<?php if( is_front_page() && is_home() ) : ?>
+		<div id="the-head" class="front-page-head" style="background: url('<?php if(is_front_page() && is_home()): echo ( ($front_image) ? esc_url($front_image) : '' ); endif; ?>');">
+			<?php get_template_part('template-parts/front-page/front-page-image', 'front-page-image'); ?>
 	<div id="content" class="site-content">
