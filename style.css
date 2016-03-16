@@ -961,14 +961,13 @@ a:active {
 }
 
 #primary {
-	padding: 80px 0 0 0;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 
 #main {
 	width: 75%;
-	padding: 10px;
+	padding: 80px 0 0 10px;
 	margin: auto;
 	float: left;
 	}
@@ -977,7 +976,7 @@ a:active {
 	width: 25%;
 	margin: auto;
 	float: left;
-	padding: 5px 0;
+	padding: 85px 0;
 }
 
 .page-entry {
