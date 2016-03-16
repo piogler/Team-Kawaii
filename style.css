@@ -293,7 +293,7 @@ h6 {
 }
 
 h1.entry-title {
-	font-size: 1.3em;
+	font-size: 3em;
 	text-transform: uppercase;
 }
 
@@ -449,8 +449,8 @@ h1.site-title,
 h1.site-title a {
 	width: 100%;
 	margin: auto;
-	font-size: 3em;
-	line-height: 2em;
+	font-size: 1.4em;
+	line-height: 1em;
 	text-decoration: none;
 	text-transform: uppercase;
 }
