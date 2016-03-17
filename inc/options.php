@@ -115,10 +115,10 @@ function tk_theme_options_page() {
 	</td>
 	</tr>
 
-	<tr valign="top"><th scope="row">Author Credits</th>
+	<tr valign="top"><th scope="row">Blog Posts</th>
 	<td>
-	<input type="checkbox" id="author_credits" name="tk_options[author_credits]" value="1" <?php checked( true, $settings['author_credits'] ); ?> />
-	<label for="author_credits">Show Author Credits</label>
+	<input type="checkbox" id="blog_posts" name="tk_options[blog_posts]" value="1" <?php checked( true, $settings['blog_posts'] ); ?> />
+	<label for="blog_posts">Show Blog Posts</label>
 	</td>
 	</tr>
 
@@ -142,7 +142,7 @@ function tk_validate_options( $input ) {
 	$input['footer_copyright'] = wp_filter_nohtml_kses( $input['footer_copyright'] );
 	
 	// We strip all tags from the text field, to avoid vulnerablilties like XSS
-	$input['intro_text'] = wp_filter_post_kses( $input['intro_text'] );
+	$input['about_text'] = wp_filter_post_kses( $input['about_text'] );
 	
 	// We select the previous value of the field, to restore it in case an invalid entry has been given
 	$prev = $settings['featured_cat'];
@@ -157,10 +157,10 @@ function tk_validate_options( $input ) {
 		$input['layout_view'] = $prev;
 	
 	// If the checkbox has not been checked, we void it
-	if ( ! isset( $input['author_credits'] ) )
-		$input['author_credits'] = null;
+	if ( ! isset( $input['blog_posts'] ) )
+		$input['blog_posts'] = null;
 	// We verify if the input is a boolean value
-	$input['author_credits'] = ( $input['author_credits'] == 1 ? 1 : 0 );
+	$input['blog_posts'] = ( $input['blog_posts'] == 1 ? 1 : 0 );
 	
 	return $input;
 }
