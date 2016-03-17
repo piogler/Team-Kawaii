@@ -757,9 +757,9 @@ a:active {
 }
 
 .main-navigation li {
-	float: left;
-	position: relative;
-	padding: 20px 0;
+	display: inline-block;
+	vertical-align: top;
+	padding: 1em 0.5em;
 }
 
 .main-navigation a {
