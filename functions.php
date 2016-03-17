@@ -37,8 +37,6 @@ function team_kawaii_setup() {
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
 
@@ -61,7 +59,6 @@ function team_kawaii_setup() {
 
 	/*
 	 * Enable support for Post Formats.
-	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
 	add_theme_support( 'post-formats', array(
 		'aside',
@@ -80,13 +77,6 @@ function team_kawaii_setup() {
 endif;
 add_action( 'after_setup_theme', 'team_kawaii_setup' );
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
 function team_kawaii_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'team_kawaii_content_width', 640 );
 }
@@ -94,8 +84,6 @@ add_action( 'after_setup_theme', 'team_kawaii_content_width', 0 );
 
 /**
  * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function team_kawaii_widgets_init() {
 	register_sidebar( array(
@@ -123,6 +111,9 @@ function team_kawaii_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'team_kawaii_scripts' );
+
+// Theme Options Page
+require get_template_directory() . '/inc/options.php';
 
 //Implement the Custom Header feature.
 require get_template_directory() . '/inc/custom-header.php';
