@@ -1252,6 +1252,7 @@ object {
 	/* Header */
 	#masthead {
 		min-height: 50px;
+		background: rgba( 255, 255, 255, 0.9 ) ;
 	}
 	
 	.site-description {
@@ -1279,7 +1280,6 @@ object {
 		float:none;
 		width: 100%;
 		text-align: left;
-		background: #fff;
 		font-size: 1.2em;
 		border-bottom: 1px #c0c0c0 solid;
 	}
