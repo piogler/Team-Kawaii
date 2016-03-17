@@ -822,6 +822,15 @@ a:active {
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+    outline:none;
+}
+
+.menu-toggle{
+	margin: 1em;
+	float: right!important;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -833,6 +842,14 @@ a:active {
 	}
 }
 
+.menu-toggle .spam {
+ display: block;
+ width: 1.25em;
+ height: 0.2em;
+ margin: 0.25em 0;
+ background: #000;
+ z-index: 99;
+}
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
