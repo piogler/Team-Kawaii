@@ -110,9 +110,7 @@ function team_kawaii_widgets_init() {
 }
 add_action( 'widgets_init', 'team_kawaii_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
+//Enqueue scripts and styles.
 function team_kawaii_scripts() {
 	wp_enqueue_style( 'team-kawaii-style', get_stylesheet_uri() );
 
@@ -126,27 +124,17 @@ function team_kawaii_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'team_kawaii_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
+//Implement the Custom Header feature.
 require get_template_directory() . '/inc/custom-header.php';
 
-/**
- * Custom template tags for this theme.
- */
+//Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
-/**
- * Custom functions that act independently of the theme templates.
- */
+// Custom functions that act independently of the theme templates.
 require get_template_directory() . '/inc/extras.php';
 
-/**
- * Customizer additions.
- */
+//Customizer additions.
 require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
+// Load Jetpack compatibility file.
 require get_template_directory() . '/inc/jetpack.php';
