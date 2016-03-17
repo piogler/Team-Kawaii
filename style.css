@@ -1270,6 +1270,7 @@ object {
 	
 	.main-navigation ul {
 		width: 100%;
+		padding: 0;
 	}
 	.main-navigation ul li{
 		display:block;
@@ -1277,20 +1278,48 @@ object {
 		margin:0;
 		float:none;
 		width: 100%;
-		text-align: center;
+		text-align: left;
+		background: #fff;
+		font-size: 1.2em;
+		border-bottom: 1px #c0c0c0 solid;
+	}
+	
+	.main-navigation ul li:last-child {
+		border-bottom: none;
+	}
+	
+	.main-navigation ul li:hover {
+		text-indent: 1em;
 	}
 	
 	/* Main Body */
 	
 	#main { 
-		width: 90%; 
+		width: 75%; 
 		padding: 70px 0;
+		margin: auto;
+		float: left;
+	}
+	#secondary {
+		width: 25%;
+		padding: 80px 2%;
+		margin: auto;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 736px) {
+	/* Body */
+	#main {
+		width: 90%;
+		padding: 70px 0 0 0;
 		margin: auto;
 		float: none;
 	}
+	
 	#secondary {
 		width: 90%;
-		padding: 0;
+		padding: 5% 2%;
 		margin: auto;
 		float: none;
 	}
