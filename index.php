@@ -12,13 +12,19 @@
  * @package Team_Kawaii
  */
 
-get_header(); ?>
+get_header(); 
+
+global $tk_options;
+$tk_settings = get_option('tk_options', $tk_options ); // The Options activation
+
+?>
 
 	<div id="primary" class="content-area">
 		
 		<?php get_template_part( 'template-parts/front-page/about', 'none' ); /* Adding the About Template */ ?>
 		<?php get_template_part( 'template-parts/front-page/whatsection', 'none' ); /* Adding the What We Do Template */ ?>
 
+	<?php if($tk_settings['blog_posts']) : ?> <!-- Adding the option to show or disable posts -->
 		<?php
 		if ( have_posts() ) :
 
@@ -49,6 +55,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+	<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
