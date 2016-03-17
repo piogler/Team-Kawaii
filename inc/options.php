@@ -18,19 +18,7 @@ function tk_register_settings() {
 
 add_action( 'admin_init', 'tk_register_settings' );
 
-// Store categories in array
-$tk_categories[0] = array(
-	'value' => 0,
-	'label' => ''
-);
-$tk_cats = get_categories(); $i = 1;
-foreach( $tk_cats as $tk_cat ) :
-	$tk_categories[$tk_cat->cat_ID] = array(
-		'value' => $tk_cat->cat_ID,
-		'label' => $tk_cat->cat_name
-	);
-	$i++;
-endforeach;
+
 
 // Page and Posts Layout
 $tk_layouts = array(
@@ -80,7 +68,7 @@ function tk_theme_options_page() {
 	including a nonce, a unique number used to ensure the form has been submitted from the admin page
 	and not somewhere else, very important for security */ ?>
 
-	<table class="form-table"><!-- Grab a hot cup of coffee, yes we're using tables! -->
+	<table class="form-table">
 
 	<tr valign="top"><th scope="row"><label for="footer_copyright">Footer Copyright Notice</label></th>
 	<td>
@@ -94,21 +82,7 @@ function tk_theme_options_page() {
 	</td>
 	</tr>
 
-	<tr valign="top"><th scope="row"><label for="featured_cat">Featured Category</label></th>
-	<td>
-	<select id="featured_cat" name="tk_options[featured_cat]">
-	<?php
-	foreach ( $tk_categories as $category ) :
-		$label = $category['label'];
-		$selected = '';
-		if ( $category['value'] == $settings['featured_cat'] )
-			$selected = 'selected="selected"';
-		echo '<option style="padding-right: 10px;" value="' . esc_attr( $category['value'] ) . '" ' . $selected . '>' . $label . '</option>';
-	endforeach;
-	?>
-	</select>
-	</td>
-	</tr>
+
 
 	<tr valign="top"><th scope="row">Page and Post Layout</th>
 	<td>
