@@ -123,16 +123,10 @@ function tk_validate_options( $input ) {
 	$input['about_text'] = wp_filter_post_kses( $input['about_text'] );
 	
 	// We select the previous value of the field, to restore it in case an invalid entry has been given
-	$prev = $settings['featured_cat'];
-	// We verify if the given value exists in the categories array
-	if ( !array_key_exists( $input['featured_cat'], $tk_categories ) )
-		$input['featured_cat'] = $prev;
-	
-	// We select the previous value of the field, to restore it in case an invalid entry has been given
-	$prev = $settings['layout_view'];
+	$prev = $settings['page_layout'];
 	// We verify if the given value exists in the layouts array
-	if ( !array_key_exists( $input['layout_view'], $tk_layouts ) )
-		$input['layout_view'] = $prev;
+	if ( !array_key_exists( $input['page_layout'], $tk_layouts ) )
+		$input['page_layout'] = $prev;
 	
 	// If the checkbox has not been checked, we void it
 	if ( ! isset( $input['blog_posts'] ) )
