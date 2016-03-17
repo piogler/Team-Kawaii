@@ -11,7 +11,7 @@
 
 ?>
 <?php
-$front_general_image = get_theme_mod( 'teamkawaii_front_general_image', esc_url( get_template_directory_uri() . '/images/rome3.jpg' ) );
+$front_general_image = get_theme_mod( 'teamkawaii_front_general_image', esc_url( get_template_directory_uri() . '/images/rome3.JPG' ) );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
