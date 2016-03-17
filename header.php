@@ -41,7 +41,7 @@ $front_general_image = get_theme_mod( 'teamkawaii_front_general_image', esc_url(
 				endif; ?>
 		</div><!-- .site-branding -->
 		<div id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'team_kawaii' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="spam"><?php esc_html_e( '', 'team_kawaii' ); ?></span><span class="spam"><?php esc_html_e( '', 'team_kawaii' ); ?></span><span class="spam"><?php esc_html_e( '', 'team_kawaii' ); ?></span></button>
 			<?php wp_nav_menu( array( 
 				'theme_location' => 'primary',
 				'menu_id' => 'primary-menu' 
