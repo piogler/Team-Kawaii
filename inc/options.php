@@ -32,16 +32,20 @@ foreach( $tk_cats as $tk_cat ) :
 	$i++;
 endforeach;
 
-// Store layouts views in array
+// Page and Posts Layout
 $tk_layouts = array(
-	'fixed' => array(
-		'value' => 'fixed',
-		'label' => 'Fixed Layout'
+	'left' => array(
+		'value' => 'left',
+		'label' => 'Left Sidebar'
 	),
-	'fluid' => array(
-		'value' => 'fluid',
-		'label' => 'Fluid Layout'
+	'right' => array(
+		'value' => 'right',
+		'label' => 'Right Sidebar'
 	),
+	'full' => array(
+		'value'	=> 'full',
+		'label'	=> 'Full Width'
+	)
 );
 
 function tk_theme_options() {
@@ -106,10 +110,10 @@ function tk_theme_options_page() {
 	</td>
 	</tr>
 
-	<tr valign="top"><th scope="row">Layout View</th>
+	<tr valign="top"><th scope="row">Page and Post Layout</th>
 	<td>
 	<?php foreach( $tk_layouts as $layout ) : ?>
-	<input type="radio" id="<?php echo $layout['value']; ?>" name="tk_options[layout_view]" value="<?php esc_attr_e( $layout['value'] ); ?>" <?php checked( $settings['layout_view'], $layout['value'] ); ?> />
+	<input type="radio" id="<?php echo $layout['value']; ?>" name="tk_options[page_layout]" value="<?php esc_attr_e( $layout['value'] ); ?>" <?php checked( $settings['page_layout'], $layout['value'] ); ?> />
 	<label for="<?php echo $layout['value']; ?>"><?php echo $layout['label']; ?></label><br />
 	<?php endforeach; ?>
 	</td>
