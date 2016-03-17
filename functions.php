@@ -132,3 +132,39 @@ require get_template_directory() . '/inc/jetpack.php';
 
 // Add the Navigation Menu in the footer
 register_nav_menus( array('secondary'=>__( 'Footer Menu' ),));
+
+// Page Layout Options
+function tk_page_layout() {
+	global $tk_options;
+	$settings = get_option( 'tk_options', $tk_options );
+	if( $settings['page_layout'] == 'left' ) : ?>
+<style type="text/css">
+#main {
+	float: right;
+	margin: auto;
+	padding: 80px 0;
+	width: 75%;
+}
+
+#secondary {
+	float: left;
+	margin: auto;
+	padding: 100px 20px;
+	width: 25%;
+}
+</style>
+	<?php elseif( $settings['page_layout'] == 'full' ) : ?>
+<style type="text/css">
+#main {
+	float: left;
+	margin: auto;
+	padding: 80px 2%;
+	width: 100%;
+}
+
+#secondary {
+	display: none;
+}
+</style>
+<?php endif;
+}
