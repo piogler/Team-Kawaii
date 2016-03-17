@@ -1279,4 +1279,19 @@ object {
 		width: 100%;
 		text-align: center;
 	}
+	
+	/* Main Body */
+	
+	#main { 
+		width: 90%; 
+		padding: 70px 0;
+		margin: auto;
+		float: none;
+	}
+	#secondary {
+		width: 90%;
+		padding: 0;
+		margin: auto;
+		float: none;
+	}
 }
