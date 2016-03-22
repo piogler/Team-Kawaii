@@ -8,7 +8,7 @@ Version: 1.0.0
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS <<<
 ----------------------------------------------------------------
 # Normalize
 # Typography
@@ -439,8 +439,8 @@ table {
 h1.site-title,
 h1.site-title a {
 	font-size: 1.4em;
-	margin: auto;
 	line-height: 1em;
+	margin: auto;
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 100%;
@@ -744,8 +744,8 @@ a:active {
 
 .main-navigation li {
 	display: inline-block;
-	vertical-align: top;
 	padding: 1em 0.5em;
+	vertical-align: top;
 }
 
 .main-navigation a {
@@ -811,7 +811,7 @@ a:active {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-    outline:none;
+        outline:none;
 	padding: 10px;
 	width: 100%;
 }
@@ -834,12 +834,12 @@ a:active {
 }
 
 .menu-toggle .spam {
- display: block;
- width: 1.25em;
- height: 0.2em;
- margin: 0.25em 0;
- background: #000;
- z-index: 99;
+	 background: #000;
+	 display: block;
+	 height: 0.2em;
+	 margin: 0.25em 0;
+	 width: 1.25em;
+	 z-index: 99;
 }
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -993,7 +993,7 @@ a:active {
 #secondary section ul {
 	margin: 0;
 	padding: 10px 0;
-    list-style-type: none;
+	list-style-type: none;
 }
 
 #secondary section ul li {
@@ -1239,8 +1239,8 @@ object {
 	
 	/* Header */
 	#masthead {
+		background: rgba( 255, 255, 255, 0.9 );
 		min-height: 50px;
-		background: rgba( 255, 255, 255, 0.9 ) ;
 	}
 	
 	.site-description {
@@ -1258,18 +1258,18 @@ object {
 	}
 	
 	.main-navigation ul {
-		width: 100%;
 		padding: 0;
+		width: 100%;
 	}
 	.main-navigation ul li{
-		display:block;
-		padding:5px 0;
-		margin:0;
-		float:none;
-		width: 100%;
-		text-align: left;
-		font-size: 1.2em;
 		border-bottom: 1px #c0c0c0 solid;
+		display:block;
+		float:none;
+		font-size: 1.2em;
+		margin:0;
+		padding:5px 0;
+		text-align: left;
+		width: 100%;
 	}
 	
 	.main-navigation ul li:last-child {
@@ -1283,32 +1283,32 @@ object {
 	/* Main Body */
 	
 	#main { 
-		width: 75%; 
-		padding: 70px 0;
-		margin: auto;
 		float: left;
+		margin: auto;
+		padding: 70px 0;
+		width: 75%; 
 	}
 	#secondary {
-		width: 25%;
-		padding: 80px 2%;
-		margin: auto;
 		float: left;
+		margin: auto;
+		padding: 80px 2%;
+		width: 25%;
 	}
 }
 
 @media only screen and (max-width: 736px) {
 	/* Body */
 	#main {
-		width: 90%;
-		padding: 70px 0 0 0;
-		margin: auto;
 		float: none;
+		margin: auto;
+		padding: 70px 0 0 0;
+		width: 90%;
 	}
 	
 	#secondary {
-		width: 90%;
-		padding: 5% 2%;
-		margin: auto;
 		float: none;
+		margin: auto;
+		padding: 5% 2%;
+		width: 90%;
 	}
 }
